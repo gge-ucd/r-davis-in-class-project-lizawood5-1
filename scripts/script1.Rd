@@ -1,3 +1,0 @@
-library(tidyverse)
-df <- read.csv("~/Desktop/R_DAVIS_2021/r-davis-in-class-project-lizawood5-1/data/tail_length.csv")
-head(df)

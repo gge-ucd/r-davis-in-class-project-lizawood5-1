@@ -1,0 +1,30 @@
+source("/Users/lizawood/Documents/Davis/R-Projects/POL213/poissontable1.csv")
+read.csv("/Users/lizawood/Documents/Davis/R-Projects/POL213/poissontable1.csv")
+print("hello world")
+c("Hello", "world")
+obj <- c("Hello", "world")
+obj
+library(ggplpt2)
+library(ggplot2)
+x = c(1,2,3,4)
+y = c(4,3,2,1)
+df <- data.frame(x,y)
+df
+ggplot(df, aes(x, y)) +
+geom_point()
+ggplot(df, aes(x, y)) + geom_point
+ggplot(df, aes(x, y)) + geom_point()
+2+2
+exp(10)
+2+2
+exp(10)
+library(tidyverse)
+read.csv("~/Desktop/R_DAVIS_2021/r-davis-in-class-project-lizawood5-1/data/tail_length.csv")
+df <- read.csv("~/Desktop/R_DAVIS_2021/r-davis-in-class-project-lizawood5-1/data/tail_length.csv")
+head(df)
+getwd()
+setwd("/Users/lizawood/Desktop/R_DAVIS_2021/r-davis-in-class-project-lizawood5-1")
+getwd()
+file.edit("test.Rproj")
+getwd()
+file.edit("test.Rproj")
