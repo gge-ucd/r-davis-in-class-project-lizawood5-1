@@ -50,10 +50,7 @@ rpl_9s_with_nas <- function(x){
   ifelse(x %in% c(-99, -999.9, -99.9), NA, x)
 }
 
-colnames(mloa)
-head(mloa)
-
-mloa2 = map_df(mloa, rpl_9s_with_nas)
+mloa2 <- map_df(mloa, rpl_9s_with_nas)
 
 summary(mloa$rel_humid)
 summary(mloa2$rel_humid)
@@ -83,17 +80,12 @@ for(i in unique(gapminder$country)){
 map(unique(gapminder$country), plotPopGrowth)
 
 
-
 ## Iterations also help you repeat something you want to do over and over again by performing that thing on multiple files, columns, rows... whatever unit you want to repeat across. 
 
-
-# Why does iteration actually help?
-
-## 1. Reading in data
+## Useful example 1: reading in an making tables out of data
 ### List all the file names you have in a folder
 filenames <- list.files("data/flood_example")
 filenames
-
 
 for(i in filenames){ # For every file name
   filepath <- paste0("data/flood_example/",i) # Identify the filepath
@@ -110,7 +102,6 @@ flood_table <- function(data){
   )
 }
 
-
 flood_table(data = idaho.csv)
 
 flood_master_table <- data.frame()
@@ -122,14 +113,14 @@ for(i in filenames){
 flood_master_table$state <- filenames
 
 
-
+# Example 2: 
+## Mockingbord data
 df <- read.csv("data/mockingbird_adult_pb_data.csv")
 
-# Convert ug/dl to ng/ml (times 10)
-
+## Convert ug/dl to ng/ml (times 10)
 df$blood_ng_dl <- df$blood_ug_dl*10
 
-# Which feather measurement has the lead concentrations most closely asigned to the blood levels?
+## Which feather measurement has the lead concentrations most closely aligned to the blood levels?
 df$cal_dff <- NA
 df$mv_dff <- NA
 df$tip_dff <- NA
