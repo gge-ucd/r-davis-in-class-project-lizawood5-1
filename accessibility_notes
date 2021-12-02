@@ -1,0 +1,65 @@
+Triangluating resources from the Student Disability Center and what I've been learning from the blind R community.
+
+I don't know that I have enough ideas in mind to make up an entire GSR, but I would like to write at least 2 tutorials based on what I've learned
+1. For new coders with visual limitations, especially those that use screen readers, how to get started coding in R from the terminal, and thinking about small ways to make life eaier for file management and data exploration
+  * then some more advanced tutorials on utilizing the power of Rmd
+2. Faculty who have students using screen readers. Students are using screen readers. Some of the most basic challenges include
+
+https://r-resources.massey.ac.nz/LURNBlind/LURNBlindch9.html#x11-670009
+
+# Getting started
+* What GUI works?
+  * RStudio does not seem ready
+  * R GUI works but does not allow output to be saved and requires tabbing between script and console to read output
+  * R in terminal: Allows you to experiment and read output without toggling. Can be saved, though this is messy. Paste final script over to text editor.
+* Text editor: choosing a text editor that works for coding but is not overly simple.
+  * This is likely Notepad++ in PC and XX on Mac
+
+# File organiation and naming conventions will make your life easier
+* Decide on how you will name things. Short, descript, no spaces.
+* File organiation: recommend using the Rproj availability for future github. Think about your workflow based on projects
+* Keep your data somewhere else, like Box. you may have to navigate there, but that is okay
+
+
+# Taking advantage of objects in R
+* Take advantage of saving objects so that you don't have a bunch of output
+* Inspect only one part of an object at a time
+* Objects that are can be subsetted with $
+  * Dataframes
+  * Model Objects
+
+* Objects that can be subsetted with [] or [[]]
+
+
+# Setting up templates
+R
+setwd()
+library()
+list.files()
+data <- read.csv()
+
+# Using GitHub
+If you keep your files associated with a project, you can track your changes with GitHub
+* GitHub from terminal
+cd ~
+git status
+git add --all
+git commit -m ""
+
+# Data exploration
+* gt
+* sink, as advised by the Massey guy
+
+# Saving files
+* Just like naming conventions, saving files really matters
+
+# Using an Rmd template to view your output in html
+* Can read tables
+* Can read code and output together
+* Can not run parts of the code that don't works
+* Issues you may run into
+  * Working directories can be funny
+
+
+# Writing functions to make all of this faster
+*
